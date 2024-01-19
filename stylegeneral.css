@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('lolfont.otf') format('opentype');
+}
+
+body {
+    /*font-family: 'CustomFont', Arial, sans-serif;*/
+    background-image: url("images/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0; 
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+#login {
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand-container {
+    flex: 2.5;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons {
+    flex: 2.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-middle {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nav-link {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+
+@media (max-width: 1500px) {
+    /* Adjustments for smaller screens */
+    #chat-messages p {
+        font-size: 12px; /* Adjust font size as needed */
+    }
+}
+
+@media (max-width: 500px) {
+    /* Adjustments for small screens */
+    #chat-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    #chat-messages p {
+        max-width: none; /* Remove maximum width for small screens */
+    }
+}
+
+#chat-messages {
+    max-height: 450px; /* Set a maximum height for the chat messages container, adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling if the messages exceed the container height */
+}
+
+#chat-messages p {
+    background-color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    width: 1000px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Add this rule to wrap long words to a new line */
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%; /* Set the height to the full viewport height */
+}
+
+#input-container {
+    margin-top: 10px;
+}
+
+#chat-container {
+    margin-left: 60px; /* Adjust the value as needed */
+    margin-right: 60px; /* Adjust the value as needed */
+    margin-top: 50px;
+}

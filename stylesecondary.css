@@ -1,0 +1,33 @@
+h5 {
+    color: white;
+}
+
+label, h2 {
+    color: white;
+}
+
+#login-form {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#login-form .form-group {
+    text-align: center;
+}
+  
+#login-form .form-group label {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#loginmessage {
+    color: gold !important;
+    text-align: center;
+    margin: 0 auto;
+}
+
